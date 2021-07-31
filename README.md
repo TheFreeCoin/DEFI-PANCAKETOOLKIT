@@ -25,3 +25,13 @@ yarn
 ```
 
 Then, refer to the readme of each project.
+
+
+## How to commit:
+
+```
+yarn build
+yarn publish
+```
+
+
