@@ -1,6 +1,6 @@
 {
-  "name": "@pancakeswap/uikit",
-  "version": "0.40.4",
+  "name": "@pancakefork/uikit",
+  "version": "0.43.0",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,6 +9,7 @@
     "dist"
   ],
   "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
+  "private": false,
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
