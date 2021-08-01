@@ -31,6 +31,9 @@ it("renders correctly", () => {
   const { asFragment } = renderWithTheme(
     <BrowserRouter>
       <Menu
+        account="0xbdda50183d817c3289f895a4472eb475967dc980"
+        login={noop}
+        logout={noop}
         isDark={false}
         toggleTheme={noop}
         langs={langs}
@@ -46,7 +49,7 @@ it("renders correctly", () => {
 
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
-      .c26 {
+      .c27 {
       position: fixed;
       top: 0px;
       left: 0px;
@@ -58,6 +61,13 @@ it("renders correctly", () => {
       opacity: 0;
       z-index: 10;
       pointer-events: none;
+    }
+
+    .c2 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
     }
 
     .c5 {
@@ -80,7 +90,7 @@ it("renders correctly", () => {
       flex-shrink: 0;
     }
 
-    .c12 {
+    .c13 {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
@@ -89,13 +99,6 @@ it("renders correctly", () => {
       -ms-flex-negative: 0;
       flex-shrink: 0;
       margin-right: 8px;
-    }
-
-    .c2 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
     }
 
     .c3 {
@@ -158,7 +161,64 @@ it("renders correctly", () => {
       cursor: not-allowed;
     }
 
-    .c23 {
+    .c8 {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      cursor: pointer;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-letter-spacing: 0.03em;
+      -moz-letter-spacing: 0.03em;
+      -ms-letter-spacing: 0.03em;
+      letter-spacing: 0.03em;
+      line-height: 1;
+      opacity: 1;
+      outline: 0;
+      -webkit-transition: background-color 0.2s,opacity 0.2s;
+      transition: background-color 0.2s,opacity 0.2s;
+      height: 32px;
+      padding: 0 16px;
+      background-color: #EFF4F5;
+      box-shadow: none;
+      color: #1FC7D4;
+    }
+
+    .c8:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+      opacity: 0.65;
+    }
+
+    .c8:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+      opacity: 0.85;
+      -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    .c8:disabled,
+    .c8.pancake-button--disabled {
+      background-color: #E9EAEB;
+      border-color: #E9EAEB;
+      box-shadow: none;
+      color: #BDC2C4;
+      cursor: not-allowed;
+    }
+
+    .c24 {
       -webkit-align-items: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
@@ -194,11 +254,11 @@ it("renders correctly", () => {
       box-shadow: none;
     }
 
-    .c23:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    .c24:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c23:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+    .c24:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -206,8 +266,8 @@ it("renders correctly", () => {
       box-shadow: none;
     }
 
-    .c23:disabled,
-    .c23.pancake-button--disabled {
+    .c24:disabled,
+    .c24.pancake-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;
@@ -259,7 +319,7 @@ it("renders correctly", () => {
       animation-iteration-count: 1;
     }
 
-    .c17 {
+    .c18 {
       color: #ED4B9E;
       font-size: 14px;
       font-weight: 400;
@@ -267,7 +327,7 @@ it("renders correctly", () => {
       font-size: 14px;
     }
 
-    .c19 {
+    .c20 {
       color: #FFB237;
       font-size: 14px;
       font-weight: 400;
@@ -275,7 +335,7 @@ it("renders correctly", () => {
       font-size: 14px;
     }
 
-    .c13 {
+    .c14 {
       color: transparent;
       -webkit-transition: color 0.4s;
       transition: color 0.4s;
@@ -285,7 +345,7 @@ it("renders correctly", () => {
       flex-grow: 1;
     }
 
-    .c11 {
+    .c12 {
       cursor: pointer;
       display: -webkit-box;
       display: -webkit-flex;
@@ -306,7 +366,7 @@ it("renders correctly", () => {
       flex-shrink: 0;
     }
 
-    .c11 a {
+    .c12 a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -319,15 +379,15 @@ it("renders correctly", () => {
       height: 100%;
     }
 
-    .c11 svg {
+    .c12 svg {
       fill: #7A6EAA;
     }
 
-    .c11:hover {
+    .c12:hover {
       background-color: #EFF4F5;
     }
 
-    .c11.rainbow {
+    .c12.rainbow {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
@@ -335,7 +395,7 @@ it("renders correctly", () => {
       background-size: 400% 100%;
     }
 
-    .c15 {
+    .c16 {
       cursor: pointer;
       display: -webkit-box;
       display: -webkit-flex;
@@ -356,7 +416,7 @@ it("renders correctly", () => {
       flex-shrink: 0;
     }
 
-    .c15 a {
+    .c16 a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -369,15 +429,15 @@ it("renders correctly", () => {
       height: 100%;
     }
 
-    .c15 svg {
+    .c16 svg {
       fill: #7A6EAA;
     }
 
-    .c15:hover {
+    .c16:hover {
       background-color: #EFF4F5;
     }
 
-    .c15.rainbow {
+    .c16.rainbow {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
@@ -385,7 +445,7 @@ it("renders correctly", () => {
       background-size: 400% 100%;
     }
 
-    .c18 {
+    .c19 {
       border-radius: 16px;
       padding: 0 8px;
       border: 2px solid;
@@ -395,7 +455,7 @@ it("renders correctly", () => {
       margin-left: 8px;
     }
 
-    .c20 {
+    .c21 {
       border-radius: 16px;
       padding: 0 8px;
       border: 2px solid;
@@ -405,7 +465,7 @@ it("renders correctly", () => {
       margin-left: 8px;
     }
 
-    .c14 {
+    .c15 {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -418,7 +478,7 @@ it("renders correctly", () => {
       flex-shrink: 0;
     }
 
-    .c16 {
+    .c17 {
       max-height: 0;
       -webkit-transition: max-height 0.3s ease-out;
       transition: max-height 0.3s ease-out;
@@ -428,7 +488,7 @@ it("renders correctly", () => {
       border-width: 1px 0;
     }
 
-    .c21 {
+    .c22 {
       max-height: 48px;
       -webkit-transition: max-height 0.3s ease-out;
       transition: max-height 0.3s ease-out;
@@ -438,7 +498,7 @@ it("renders correctly", () => {
       border-width: 1px 0;
     }
 
-    .c10 {
+    .c11 {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -451,12 +511,12 @@ it("renders correctly", () => {
       height: 100%;
     }
 
-    .c24 {
+    .c25 {
       padding: 0;
       width: 48px;
     }
 
-    .c22 {
+    .c23 {
       -webkit-flex: none;
       -ms-flex: none;
       flex: none;
@@ -465,7 +525,7 @@ it("renders correctly", () => {
       border-top: solid 2px rgba(133,133,133,0.1);
     }
 
-    .c9 {
+    .c10 {
       position: fixed;
       padding-top: 80px;
       top: 0;
@@ -533,7 +593,7 @@ it("renders correctly", () => {
       transform: translate3d(0,0,0);
     }
 
-    .c8 {
+    .c9 {
       position: relative;
       display: -webkit-box;
       display: -webkit-flex;
@@ -541,7 +601,7 @@ it("renders correctly", () => {
       display: flex;
     }
 
-    .c25 {
+    .c26 {
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -555,7 +615,7 @@ it("renders correctly", () => {
       max-width: 100%;
     }
 
-    .c27 {
+    .c28 {
       position: fixed;
       height: 100%;
     }
@@ -573,21 +633,21 @@ it("renders correctly", () => {
     }
 
     @media screen and (min-width:968px) {
-      .c9 {
+      .c10 {
         border-right: 2px solid rgba(133,133,133,0.1);
         width: 56px;
       }
     }
 
     @media screen and (min-width:968px) {
-      .c25 {
+      .c26 {
         margin-left: 56px;
         max-width: calc(100% - 56px);
       }
     }
 
     @media screen and (min-width:968px) {
-      .c27 {
+      .c28 {
         display: none;
       }
     }
@@ -737,18 +797,30 @@ it("renders correctly", () => {
               </svg>
             </a>
           </div>
+          <div
+            class="c2"
+          >
+            <div>
+              <button
+                class="c8"
+                scale="sm"
+              >
+                0xbd...c980
+              </button>
+            </div>
+          </div>
         </nav>
         <div
-          class="c8"
+          class="c9"
         >
           <div
-            class="c9"
+            class="c10"
           >
             <div
-              class="c10"
+              class="c11"
             >
               <div
-                class="c11"
+                class="c12"
               >
                 <a
                   aria-current="page"
@@ -757,7 +829,7 @@ it("renders correctly", () => {
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -768,21 +840,21 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Home
                   </div>
                 </a>
               </div>
               <div
-                class="c14"
+                class="c15"
               >
                 <div
-                  class="c15"
+                  class="c16"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -795,7 +867,7 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Trade
                   </div>
@@ -812,18 +884,18 @@ it("renders correctly", () => {
                   </svg>
                 </div>
                 <div
-                  class="c16"
+                  class="c17"
                 />
               </div>
               <div
-                class="c15"
+                class="c16"
               >
                 <a
                   href="/farms"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -847,12 +919,12 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Farms
                   </div>
                   <div
-                    class="c17 c18"
+                    class="c18 c19"
                     color="failure"
                     font-size="14px"
                   >
@@ -861,14 +933,14 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="c15"
+                class="c16"
               >
                 <a
                   href="/syrup"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -884,21 +956,21 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Pools
                   </div>
                 </a>
               </div>
               <div
-                class="c15"
+                class="c16"
               >
                 <a
                   href="/lottery"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -911,21 +983,21 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Lottery
                   </div>
                 </a>
               </div>
               <div
-                class="c15"
+                class="c16"
               >
                 <a
                   href="/nft"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -936,21 +1008,21 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     NFT
                   </div>
                 </a>
               </div>
               <div
-                class="c15"
+                class="c16"
               >
                 <a
                   href="/competition"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -961,12 +1033,12 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Team Battle
                   </div>
                   <div
-                    class="c19 c20"
+                    class="c20 c21"
                     color="warning"
                     font-size="14px"
                   >
@@ -975,14 +1047,14 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="c14"
+                class="c15"
               >
                 <div
-                  class="c11 rainbow"
+                  class="c12 rainbow"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -993,12 +1065,12 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Profile & Teams
                   </div>
                   <div
-                    class="c17 c18"
+                    class="c18 c19"
                     color="failure"
                     font-size="14px"
                   >
@@ -1017,18 +1089,18 @@ it("renders correctly", () => {
                   </svg>
                 </div>
                 <div
-                  class="c21"
+                  class="c22"
                 />
               </div>
               <div
-                class="c14"
+                class="c15"
               >
                 <div
-                  class="c15"
+                  class="c16"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -1044,7 +1116,7 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     Info
                   </div>
@@ -1061,18 +1133,18 @@ it("renders correctly", () => {
                   </svg>
                 </div>
                 <div
-                  class="c16"
+                  class="c17"
                 />
               </div>
               <div
-                class="c14"
+                class="c15"
               >
                 <div
-                  class="c15"
+                  class="c16"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -1083,7 +1155,7 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     IFO
                   </div>
@@ -1100,18 +1172,18 @@ it("renders correctly", () => {
                   </svg>
                 </div>
                 <div
-                  class="c16"
+                  class="c17"
                 />
               </div>
               <div
-                class="c14"
+                class="c15"
               >
                 <div
-                  class="c15"
+                  class="c16"
                   role="button"
                 >
                   <svg
-                    class="c12"
+                    class="c13"
                     color="text"
                     viewBox="0 0 24 24"
                     width="24px"
@@ -1122,7 +1194,7 @@ it("renders correctly", () => {
                     />
                   </svg>
                   <div
-                    class="c13"
+                    class="c14"
                   >
                     More
                   </div>
@@ -1139,15 +1211,15 @@ it("renders correctly", () => {
                   </svg>
                 </div>
                 <div
-                  class="c16"
+                  class="c17"
                 />
               </div>
             </div>
             <div
-              class="c22"
+              class="c23"
             >
               <button
-                class="c23 c24"
+                class="c24 c25"
                 scale="md"
               >
                 <svg
@@ -1165,12 +1237,12 @@ it("renders correctly", () => {
             </div>
           </div>
           <div
-            class="c25"
+            class="c26"
           >
             body
           </div>
           <div
-            class="c26 c27"
+            class="c27 c28"
             role="presentation"
           />
         </div>
