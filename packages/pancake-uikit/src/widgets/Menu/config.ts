@@ -145,63 +145,55 @@ export const socials = [
     icon: "TelegramIcon",
     items: [
       {
-        label: "English",
-        href: "https://t.me/pancakeswap",
+        label: "Global",
+        href: "https://t.me/FREEcoinGlobal",
       },
       {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/PancakeSwapIndonesia",
+        label: "Asia",
+        href: "https://t.me/FREEcoinAsia",
       },
       {
-        label: "中文",
-        href: "https://t.me/PancakeSwap_CN",
+        label: "France",
+        href: "https://t.me/freecoinsfrancophone",
       },
       {
-        label: "Tiếng Việt",
-        href: "https://t.me/PancakeSwapVN",
+        label: "Korea",
+        href: "https://t.me/freecoin_korea",
       },
       {
-        label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
+        label: "Australia",
+        href: "https://t.me/joinchat/FZuQ50_zQBI2EwKDyCLAmA",
       },
       {
-        label: "русский",
-        href: "https://t.me/pancakeswap_ru",
+        label: "Brazil",
+        href: "https://t.me/FREEcoinBrazil",
       },
       {
-        label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
+        label: "China",
+        href: "https://t.me/joinchat/FZuQ51Nwz52e5_eumlbbZg",
       },
       {
-        label: "Português",
-        href: "https://t.me/PancakeSwapPortuguese",
+        label: "Germany",
+        href: "https://t.me/FREEcoinDeutschland",
       },
       {
-        label: "Español",
-        href: "https://t.me/PancakeswapEs",
+        label: "India",
+        href: "https://t.me/joinchat/FZuQ51lR4lTgCr2nQZL_Sg",
       },
       {
-        label: "日本語",
-        href: "https://t.me/pancakeswapjp",
+        label: "Nigeria",
+        href: "https://t.me/FREEcoin_Nigeria",
       },
       {
-        label: "Français",
-        href: "https://t.me/pancakeswapfr",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/PancakeSwapAnn",
-      },
-      {
-        label: "Whale Alert",
-        href: "https://t.me/PancakeSwapWhales",
-      },
+        label: "Russia",
+        href: "https://t.me/FREEcoinRUSSIA",
+      },      
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/THE_FREE_COIN",
   },
 ];
 
