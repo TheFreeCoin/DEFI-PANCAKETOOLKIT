@@ -60,10 +60,8 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <SocialEntry>
         <SocialLinks />
-      </SocialEntry>
-      <SettingsEntry>
         <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
-      </SettingsEntry>
+      </SocialEntry>
     </Container>
   );
 };
