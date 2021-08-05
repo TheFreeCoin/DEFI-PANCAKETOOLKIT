@@ -14,7 +14,7 @@ const MessageContainer = styled.div<MessageProps>`
   display: flex;
   background-color: gray;
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 0;
   border: solid 1px;
 
   svg {
