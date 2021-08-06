@@ -30,8 +30,7 @@ const getScale =
   };
 
 export const Handle = styled.div<HandleProps>`
-  background-color: ${({ theme }) => theme.toggle.handleBackground};
-  border-radius: 50%;
+  background-color: #ffda3b;
   cursor: pointer;
   height: ${getScale("handleHeight")};
   left: ${getScale("handleLeft")};
@@ -66,7 +65,7 @@ export const Input = styled.input<InputProps>`
 const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
   background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
-  border-radius: 24px;
+  border-radius: 0px;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
   display: inline-flex;

@@ -18,7 +18,7 @@ export const additionalColors = {
 export const lightColors: Colors = {
   ...baseColors,
   ...additionalColors,
-  background: "#2B45AD",
+  background: "#012F96",
   backgroundDisabled: "#A2DED7",
   backgroundAlt: "#0e53ef",
   cardBorder: "#180A83",
@@ -29,7 +29,7 @@ export const lightColors: Colors = {
   input: "#0845cf",
   inputSecondary: "#2d798e",
   tertiary: "#4091e1",
-  text: "#D7FFFB",
+  text: "#ffffff",
   textDisabled: "#136bc5",
   textSubtle: "#FFDA3B",
   disabled: "#A2DED7",

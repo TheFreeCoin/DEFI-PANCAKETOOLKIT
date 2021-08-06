@@ -61,8 +61,8 @@ export const PancakeStack = styled.div<HandleProps>`
   }
 
   .pancake {
-    background: #e27c31;
-    border-radius: 50%;
+    background: #ffda3b;
+    border-radius: 0%;
     width: ${getScale("pancakeSize")};
     height: ${getScale("pancakeSize")};
     position: absolute;
@@ -142,7 +142,7 @@ export const PancakeInput = styled.input<InputProps>`
   }
 
   &:checked + label .pancake:nth-child(1) {
-    background: #e27c31;
+    background: #ffda3b;
     box-shadow: 0 ${getScale("pancakeThickness")} 0 ${getScale("pancakeThickness")} #fbbe7c;
     transition-delay: 0.2s;
   }
@@ -169,7 +169,7 @@ export const PancakeLabel = styled.label<PancakeToggleProps>`
   background: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
   box-shadow: ${({ theme }) => theme.shadows.inset};
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 0px;
   position: relative;
   transition: all 0.3s ease;
   transform-origin: 20% center;

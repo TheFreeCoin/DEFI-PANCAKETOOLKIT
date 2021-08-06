@@ -48,8 +48,8 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const imageMobile = <img style={{height: "26px"}} src='/logo-m.png' alt="logo" className="mobile-icon" />
-const imageDesktop = <img style={{height: "26px"}} src='/logo-line.png' alt="logo" className="desktop-icon" />
+const imageMobile = <img style={{height: "26px"}} src='/logo-m.svg' alt="logo" className="mobile-icon" />
+const imageDesktop = <img style={{height: "26px"}} src='/logo-line.svg' alt="logo" className="desktop-icon" />
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (

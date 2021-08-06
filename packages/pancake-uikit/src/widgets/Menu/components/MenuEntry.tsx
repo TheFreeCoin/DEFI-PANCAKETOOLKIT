@@ -24,6 +24,7 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
   color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
+  font-weight: 600;
 `;
 
 const MenuEntry = styled.div<Props>`
