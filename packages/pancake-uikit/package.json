@@ -1,6 +1,6 @@
 {
   "name": "@pancakefork/uikit",
-  "version": "0.43.10",
+  "version": "0.43.11",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
